@@ -3,7 +3,9 @@ import MovieSearch from './MovieSearch';
 
 function mapStoreToProps(store) {
   return {
-    
+    userQuery: store.search.userQuery,
+    movieDeets: store.search.movieDeets,
+    singleMovie: store.search.singleMovie
   };
 };
 

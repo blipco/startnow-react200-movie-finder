@@ -3,7 +3,8 @@ import Back from './Back';
 
 function mapStoreToProps(store) {
   return {
-    
+    movieDeets: store.search.movieDeets,
+    singleMovie: store.search.singleMovie
   };
 };
 

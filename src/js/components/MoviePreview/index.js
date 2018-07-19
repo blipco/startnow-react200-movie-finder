@@ -3,8 +3,8 @@ import MoviePreview from './MoviePreview';
 
 function mapStoreToProps(store) {
   return {
-    MovieInfoPreview: store.detail.MovieInfoPreview
-  };
+    movieDeets: store.search.movieDeets,
+    };
 };
 
 export default connect(mapStoreToProps)(MoviePreview);

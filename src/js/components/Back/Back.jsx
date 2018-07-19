@@ -4,9 +4,11 @@ export default class Back extends React.Component {
   render() {
     return (
       <div>
-        <button>
+        <div className='mb-5'>
+        <a className='font-weight-bold' id='go-back' href='/#/'>
           Go Back
-        </button>
+        </a>
+        </div>
       </div>
     )
   }

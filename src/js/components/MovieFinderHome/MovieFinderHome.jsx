@@ -8,13 +8,14 @@ export default class MovieFinderHome extends React.Component {
   }
 
   render() {
+    const { movieDeets } = this.props;
     return (
-      <div>
-        <h1>
-          Movie Movie Finder
+      <div className='container'>
+        <h1 className='text-center'>
+          Movie Finder
         </h1>
-        <MovieSearch />
-        <MoviePreview />
+            <MovieSearch />
+            <MoviePreview />
       </div>
     )
   };
