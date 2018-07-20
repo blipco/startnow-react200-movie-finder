@@ -14,7 +14,7 @@ app.use(express.static(path.join(__dirname, '/../../dist')));
 
 app.listen(3000);
 
-const url = 'http://localhost:3000';
+const url = 'http://127.0.0.1:3000';
 
 
 describe('express', function() {
@@ -22,13 +22,11 @@ describe('express', function() {
 
   it('should have the correct page title', () => {
     const nightmare = new Nightmare();
-    console.log(nightmare);
     return nightmare
       .goto(url)
       .evaluate(() => document.getElementById('title').innerText)
       .end()
       .then((text) => {
-        console.log(text);
         expect(text).to.contain('Movie Finder');
       })
   });
