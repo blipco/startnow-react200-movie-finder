@@ -17,7 +17,8 @@ app.listen(3000);
 const url = 'http://localhost:3000';
 
 
-describe('express', () => {
+describe('express', function() {
+  this.timeout(15000)
   beforeEach(() => {
     nightmare = new Nightmare();
   });

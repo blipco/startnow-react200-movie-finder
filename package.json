@@ -59,10 +59,5 @@
     "react-addons-test-utils": "^15.6.0",
     "sinon": "^1.17.6",
     "sinon-chai": "^2.8.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://"
-  },
-  "license": "MIT"
+  }
 }
