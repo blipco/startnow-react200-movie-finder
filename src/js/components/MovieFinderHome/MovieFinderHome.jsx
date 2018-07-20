@@ -11,7 +11,7 @@ export default class MovieFinderHome extends React.Component {
     const { movieDeets } = this.props;
     return (
       <div className='container'>
-        <h1 className='text-center'>
+        <h1 id="title" className='text-center'>
           Movie Finder
         </h1>
             <MovieSearch />

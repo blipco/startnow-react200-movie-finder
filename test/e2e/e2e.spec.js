@@ -26,10 +26,10 @@ describe('express', function() {
   it('should have the correct page title', () =>
     nightmare
       .goto(url)
-      .evaluate(() => document.querySelector('title').innerText)
+      .evaluate(() => document.getElementById('title').innerText)
       .end()
       .then((text) => {
-        expect(text).to.equal('movie-finder');
+        expect(text).to.contain('Movie Finder');
       })
   );
 
