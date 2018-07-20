@@ -18,13 +18,12 @@ const url = 'http://localhost:3000';
 
 
 describe('express', function() {
-  this.timeout(15000)
-  beforeEach(() => {
-    nightmare = new Nightmare();
-  });
+  this.timeout(15000);
 
-  it('should have the correct page title', () =>
-    nightmare
+  it('should have the correct page title', () => {
+    const nightmare = new Nightmare();
+    console.log(nightmare);
+    return nightmare
       .goto(url)
       .evaluate(() => document.getElementById('title').innerText)
       .end()
@@ -32,7 +31,7 @@ describe('express', function() {
         console.log(text);
         expect(text).to.contain('Movie Finder');
       })
-  );
+  });
 
   it('returns the correct status code', () => axios.get(url)
     .then(response => expect(response.status === 200)));
