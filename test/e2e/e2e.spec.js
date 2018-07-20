@@ -29,6 +29,7 @@ describe('express', function() {
       .evaluate(() => document.getElementById('title').innerText)
       .end()
       .then((text) => {
+        console.log(text);
         expect(text).to.contain('Movie Finder');
       })
   );
