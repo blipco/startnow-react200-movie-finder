@@ -14,10 +14,4 @@ describe ('Back', () => {
     const wrapper = render(<Back />);
     expect(wrapper.text()).to.equal('Go Back');
   })
-
-  it('', ()=> {
-    const wrapper = render(<Back />);
-    expect(wrapper.)
-  })
-  
 })
