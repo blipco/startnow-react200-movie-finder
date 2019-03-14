@@ -9,8 +9,8 @@ export function updateSearch(userQuery) {
 };
 
 export function updateMovieInfo(userQuery, movieDeets) {
-  const genericSearch = 'http://www.omdbapi.com/?s=';
-  const idSearch = 'http://www.omdbapi.com/?i=';
+  const genericSearch = 'https://www.omdbapi.com/?s=';
+  const idSearch = 'https://www.omdbapi.com/?i=';
   const key = '&apikey=ab17354e';
 
   return {
@@ -43,7 +43,7 @@ export function updateMovieInfo(userQuery, movieDeets) {
 export default function updateMovieDetails(movieDeets, id) {
   // let rightMovie = movieDeets.find(movie => movie.data.imdbID == id)
   // console.log('rightMovie',rightMovie)
-  const idSearch = 'http://www.omdbapi.com/?i=';
+  const idSearch = 'https://www.omdbapi.com/?i=';
   const key = '&apikey=ab17354e';
   return {
     type: 'UPDATE_MOVIE_DETAILS',
